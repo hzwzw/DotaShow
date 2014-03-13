@@ -1,0 +1,7 @@
+platform :ios , '7.0'
+pod 'Shimmer'
+pod 'HMSideMenu', '~> 1.1.0'
+pod 'EAIntroView', '~> 2.3.1'
+pod 'MJPopupViewController', '~> 0.4'
+pod 'iCarousel', '~> 1.7.6'
+pod 'SIAlertView', '~> 1.3'
