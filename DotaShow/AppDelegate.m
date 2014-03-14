@@ -7,12 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import <JASidePanelController.h>
+#import "ViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    ViewController *viewController = [[ViewController alloc]init];
+    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:viewController];
+    //navi.navigationBarHidden = YES;
+    self.window.rootViewController = navi;
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

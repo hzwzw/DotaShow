@@ -1,0 +1,64 @@
+PODS:
+  - ALRadial (0.1.0)
+  - AwesomeMenu (1.0.0)
+  - BButton (3.2.3)
+  - Canvas (0.1.1)
+  - DropdownMenu (1.0.0)
+  - EAIntroView (2.3.1)
+  - FRDLivelyButton (1.1.2)
+  - HMSideMenu (1.1.0)
+  - iCarousel (1.7.6)
+  - JASidePanels (1.3.2)
+  - JSMessagesViewController (4.0.2):
+    - JSQSystemSoundPlayer
+  - JSQSystemSoundPlayer (1.4.0)
+  - MJPopupViewController (0.4)
+  - MKMapView-ZoomLevel (1.1.0)
+  - MSDynamicsDrawerViewController (1.5.1)
+  - RNFrostedSidebar (0.2.0)
+  - RNGridMenu (0.1.3)
+  - Shimmer (1.0.1)
+  - SIAlertView (1.3)
+
+DEPENDENCIES:
+  - ALRadial (~> 0.1.0)
+  - AwesomeMenu (~> 1.0.0)
+  - BButton (~> 3.2.3)
+  - Canvas
+  - DropdownMenu
+  - EAIntroView (~> 2.3.1)
+  - FRDLivelyButton (~> 1.1.2)
+  - HMSideMenu (~> 1.1.0)
+  - iCarousel (~> 1.7.6)
+  - JASidePanels (~> 1.3.2)
+  - JSMessagesViewController (~> 4.0.2)
+  - MJPopupViewController (~> 0.4)
+  - MKMapView-ZoomLevel (~> 1.1.0)
+  - MSDynamicsDrawerViewController
+  - RNFrostedSidebar (~> 0.2.0)
+  - RNGridMenu (~> 0.1.3)
+  - Shimmer
+  - SIAlertView (~> 1.3)
+
+SPEC CHECKSUMS:
+  ALRadial: 266f46923c2e9de18d6436a70c43b212b081e382
+  AwesomeMenu: c2014d6d6f4a2b6bbb91ca2f67183bc2674a9cff
+  BButton: b405745cd7ccc9444c696b8690fb79541623766a
+  Canvas: f1911025fc9ec9c7339df6e4399c90c87ce6b631
+  DropdownMenu: 3c454205c2db1fd39dc1ebf099114c4fdb73f136
+  EAIntroView: 44482e1dfb11cdcb2fca0b4abcffc8a16a9c9a99
+  FRDLivelyButton: ef29e27fa81a9a434412d1f3b266a2736349663b
+  HMSideMenu: 3a359e321b90045d64a5e7ad9165d4b0f20c828a
+  iCarousel: e23a26d7ba722215a42144e80adb0dcb59bebc41
+  JASidePanels: c0e642a7311ec9cc9adfa616fa4a795e4e169f20
+  JSMessagesViewController: 901c4f7b805e0990705d92eee8069562ac85bf9b
+  JSQSystemSoundPlayer: 28ccd01a92a0cebc6de6361e8499011b4cb6dab7
+  MJPopupViewController: 4cd0badf3dae541017e0e16e2d2c7578d9224052
+  MKMapView-ZoomLevel: a5c40a499eff1c1ec73bf12cf21e1a823dbc53cd
+  MSDynamicsDrawerViewController: 2409ca61449d8541a3ee640bfd2d230c3734d3c4
+  RNFrostedSidebar: 36339438a07088fd3ee3926db03af499477ee048
+  RNGridMenu: 8aed69538abb8280f496a88fb24e0cf7dd180caf
+  Shimmer: a1b92685f04ae7363e655f636a41a276dbb1507e
+  SIAlertView: e6d0d786c3a3f6e456b0e8b9376d0c34d68e827b
+
+COCOAPODS: 0.29.0
