@@ -58,6 +58,7 @@
 		0B5F8AD218D2F87F007C82D5 /* ShowGirlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F8AD018D2F87F007C82D5 /* ShowGirlViewController.m */; };
 		0B5F8AD318D2F87F007C82D5 /* ShowGirlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B5F8AD118D2F87F007C82D5 /* ShowGirlViewController.xib */; };
 		0BDD1FAF18D6AC56005ECC49 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDD1FAE18D6AC56005ECC49 /* FacebookSDK.framework */; };
+		0BDD1FB218D7319E005ECC49 /* page.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDD1FB118D7319E005ECC49 /* page.png */; };
 		0BF097F118D19F660077132E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF097F018D19F660077132E /* Foundation.framework */; };
 		0BF097F318D19F660077132E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF097F218D19F660077132E /* CoreGraphics.framework */; };
 		0BF097F518D19F660077132E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF097F418D19F660077132E /* UIKit.framework */; };
@@ -140,6 +141,7 @@
 		0B5F8AD018D2F87F007C82D5 /* ShowGirlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowGirlViewController.m; sourceTree = "<group>"; };
 		0B5F8AD118D2F87F007C82D5 /* ShowGirlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowGirlViewController.xib; sourceTree = "<group>"; };
 		0BDD1FAE18D6AC56005ECC49 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		0BDD1FB118D7319E005ECC49 /* page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page.png; sourceTree = "<group>"; };
 		0BF097ED18D19F660077132E /* DotaShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF097F018D19F660077132E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BF097F218D19F660077132E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -346,6 +348,7 @@
 				0B5F8A7A18D2E8F9007C82D5 /* ShareIcon */,
 				0B5F8A6718D2E3BB007C82D5 /* SlideBar */,
 				0B5F8A6518D2A756007C82D5 /* SectionCover.png */,
+				0BDD1FB118D7319E005ECC49 /* page.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -433,6 +436,7 @@
 				0B5F8A9B18D2E996007C82D5 /* 1.jpg in Resources */,
 				0B5F8AB618D2E996007C82D5 /* 28.jpg in Resources */,
 				0B5F8A6D18D2E425007C82D5 /* globe@2x.png in Resources */,
+				0BDD1FB218D7319E005ECC49 /* page.png in Resources */,
 				0B5F8A6918D2E415007C82D5 /* profile@2x.png in Resources */,
 				0B5F8AAE18D2E996007C82D5 /* 20.jpg in Resources */,
 				0B5F8AC218D2E9A6007C82D5 /* addthis500.png in Resources */,

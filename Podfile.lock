@@ -3,6 +3,7 @@ PODS:
   - AwesomeMenu (1.0.0)
   - BButton (3.2.3)
   - Canvas (0.1.1)
+  - CFShareCircle (1.0.0)
   - DropdownMenu (1.0.0)
   - EAIntroView (2.3.1)
   - FRDLivelyButton (1.1.2)
@@ -25,6 +26,7 @@ DEPENDENCIES:
   - AwesomeMenu (~> 1.0.0)
   - BButton (~> 3.2.3)
   - Canvas
+  - CFShareCircle (~> 1.0.0)
   - DropdownMenu
   - EAIntroView (~> 2.3.1)
   - FRDLivelyButton (~> 1.1.2)
@@ -45,6 +47,7 @@ SPEC CHECKSUMS:
   AwesomeMenu: c2014d6d6f4a2b6bbb91ca2f67183bc2674a9cff
   BButton: b405745cd7ccc9444c696b8690fb79541623766a
   Canvas: f1911025fc9ec9c7339df6e4399c90c87ce6b631
+  CFShareCircle: eb1512faa6e12eb9be1299e881167f33fe006c27
   DropdownMenu: 3c454205c2db1fd39dc1ebf099114c4fdb73f136
   EAIntroView: 44482e1dfb11cdcb2fca0b4abcffc8a16a9c9a99
   FRDLivelyButton: ef29e27fa81a9a434412d1f3b266a2736349663b

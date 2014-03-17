@@ -9,6 +9,9 @@
 #import "ShareViewController.h"
 #import <ALRadialMenu.h>
 #import <HMSideMenu.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import "AppDelegate.h"
+
 @interface ShareViewController ()<ALRadialMenuDelegate>
 
 @property (weak, nonatomic) IBOutlet UIButton *button;
@@ -111,7 +114,7 @@
 		} else if (index == 2) {
 			return [UIImage imageNamed:@"youtube"];
 		} else if (index == 3) {
-			return [UIImage imageNamed:@"vimeo"];
+			return [UIImage imageNamed:@"facebook500"];
 		} else if (index == 4) {
 			return [UIImage imageNamed:@"pinterest"];
 		} else if (index == 5) {
@@ -123,7 +126,7 @@
 		} else if (index == 8) {
 			return [UIImage imageNamed:@"googleplus-revised"];
 		} else if (index == 9) {
-			return [UIImage imageNamed:@"facebook500"];
+			return [UIImage imageNamed:@"vimeo"];
 		}
         
 	} else if (radialMenu == self.socialMenu) {
@@ -150,14 +153,48 @@
 		} else if (index == 2) {
 			NSLog(@"google+");
 		} else if (index == 3) {
-			NSLog(@"facebook");
+            // If the session state is any of the two "open" states when the button is clicked
+            if (FBSession.activeSession.state == FBSessionStateOpen
+                || FBSession.activeSession.state == FBSessionStateOpenTokenExtended) {
+                
+                // Close the session and remove the access token from the cache
+                // The session state handler (in the app delegate) will be called automatically
+                [FBSession.activeSession closeAndClearTokenInformation];
+                
+                // If the session state is not any of the two "open" states when the button is clicked
+            } else {
+                // Open a session showing the user the login UI
+                // You must ALWAYS ask for basic_info permissions when opening a session
+//                FBSession *session = [[FBSession alloc] init];
+//                // Set the active session
+//                [FBSession setActiveSession:session];
+//                // Open the session
+//                [session openWithBehavior:FBSessionLoginBehaviorWithNoFallbackToWebView
+//                        completionHandler:^(FBSession *session,
+//                                            FBSessionState status,
+//                                            NSError *error) {
+//                            // Respond to session state changes, 
+//                            // ex: updating the view
+//                        }];
+                
+                [FBSession openActiveSessionWithReadPermissions:@[@"basic_info"]
+                                                   allowLoginUI:YES
+                                              completionHandler:
+                 ^(FBSession *session, FBSessionState state, NSError *error) {
+                     
+                     // Retrieve the app delegate
+                     AppDelegate* appDelegate = [UIApplication sharedApplication].delegate;
+                     // Call the app delegate's sessionStateChanged:state:error method to handle session state changes
+                     [appDelegate sessionStateChanged:session state:state error:error];
+                 }];
+            }
 		}
 	}
 }
 
 - (void)addSlideBarMenu
 {
-    _sideMenu = [[HMSideMenu alloc] initWithItems:@[[self makeItem:@"dribbble"],[self makeItem:@"youtube"],[self makeItem:@"vimeo"],[self makeItem:@"pinterest"],[self makeItem:@"twitter"],[self makeItem:@"instagram500"],[self makeItem:@"facebook500"]]];
+    _sideMenu = [[HMSideMenu alloc] initWithItems:@[[self makeItem:@"dribbble"],[self makeItem:@"youtube"],[self makeItem:@"facebook500"],[self makeItem:@"pinterest"],[self makeItem:@"twitter"],[self makeItem:@"instagram500"],[self makeItem:@"vimeo"]]];
     //[_sideMenu setItemSpacing:.0];
     [_sideMenu setAnimationDuration:1.0];
     [self.view addSubview:_sideMenu];
