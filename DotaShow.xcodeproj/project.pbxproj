@@ -55,6 +55,9 @@
 		0B5F8ACA18D2E9A6007C82D5 /* vimeo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5F8AC018D2E9A6007C82D5 /* vimeo.png */; };
 		0B5F8ACB18D2E9A6007C82D5 /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B5F8AC118D2E9A6007C82D5 /* youtube.png */; };
 		0B5F8ACE18D2EF81007C82D5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F8ACD18D2EF81007C82D5 /* BaseViewController.m */; };
+		0B5F8AD218D2F87F007C82D5 /* ShowGirlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B5F8AD018D2F87F007C82D5 /* ShowGirlViewController.m */; };
+		0B5F8AD318D2F87F007C82D5 /* ShowGirlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B5F8AD118D2F87F007C82D5 /* ShowGirlViewController.xib */; };
+		0BDD1FAF18D6AC56005ECC49 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDD1FAE18D6AC56005ECC49 /* FacebookSDK.framework */; };
 		0BF097F118D19F660077132E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF097F018D19F660077132E /* Foundation.framework */; };
 		0BF097F318D19F660077132E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF097F218D19F660077132E /* CoreGraphics.framework */; };
 		0BF097F518D19F660077132E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF097F418D19F660077132E /* UIKit.framework */; };
@@ -133,6 +136,10 @@
 		0B5F8AC118D2E9A6007C82D5 /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
 		0B5F8ACC18D2EF81007C82D5 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		0B5F8ACD18D2EF81007C82D5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		0B5F8ACF18D2F87E007C82D5 /* ShowGirlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowGirlViewController.h; sourceTree = "<group>"; };
+		0B5F8AD018D2F87F007C82D5 /* ShowGirlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowGirlViewController.m; sourceTree = "<group>"; };
+		0B5F8AD118D2F87F007C82D5 /* ShowGirlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowGirlViewController.xib; sourceTree = "<group>"; };
+		0BDD1FAE18D6AC56005ECC49 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		0BF097ED18D19F660077132E /* DotaShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DotaShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF097F018D19F660077132E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0BF097F218D19F660077132E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -162,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF097F318D19F660077132E /* CoreGraphics.framework in Frameworks */,
+				0BDD1FAF18D6AC56005ECC49 /* FacebookSDK.framework in Frameworks */,
 				0BF097F518D19F660077132E /* UIKit.framework in Frameworks */,
 				0BF097F118D19F660077132E /* Foundation.framework in Frameworks */,
 				D042E5B1C4DE4154BF52667D /* libPods.a in Frameworks */,
@@ -269,6 +277,7 @@
 		0BF097EF18D19F660077132E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0BDD1FAE18D6AC56005ECC49 /* FacebookSDK.framework */,
 				0BF097F018D19F660077132E /* Foundation.framework */,
 				0BF097F218D19F660077132E /* CoreGraphics.framework */,
 				0BF097F418D19F660077132E /* UIKit.framework */,
@@ -292,6 +301,9 @@
 				0B5F8A7518D2E8DD007C82D5 /* ShareViewController.h */,
 				0B5F8A7618D2E8DD007C82D5 /* ShareViewController.m */,
 				0B5F8A7718D2E8DD007C82D5 /* ShareViewController.xib */,
+				0B5F8ACF18D2F87E007C82D5 /* ShowGirlViewController.h */,
+				0B5F8AD018D2F87F007C82D5 /* ShowGirlViewController.m */,
+				0B5F8AD118D2F87F007C82D5 /* ShowGirlViewController.xib */,
 				0BF0980818D19F660077132E /* Images.xcassets */,
 				0BF097F718D19F660077132E /* Supporting Files */,
 			);
@@ -433,6 +445,7 @@
 				0B5F8AC618D2E9A6007C82D5 /* googleplus-revised.png in Resources */,
 				0B5F8AC818D2E9A6007C82D5 /* pinterest.png in Resources */,
 				0B5F8A9F18D2E996007C82D5 /* 5.jpg in Resources */,
+				0B5F8AD318D2F87F007C82D5 /* ShowGirlViewController.xib in Resources */,
 				0BF0980918D19F660077132E /* Images.xcassets in Resources */,
 				0B5F8AA618D2E996007C82D5 /* 12.jpg in Resources */,
 				0B5F8AC518D2E9A6007C82D5 /* facebook500.png in Resources */,
@@ -519,6 +532,7 @@
 				0BF0980718D19F660077132E /* ViewController.m in Sources */,
 				0B5F8ACE18D2EF81007C82D5 /* BaseViewController.m in Sources */,
 				0BF0980118D19F660077132E /* AppDelegate.m in Sources */,
+				0B5F8AD218D2F87F007C82D5 /* ShowGirlViewController.m in Sources */,
 				0B5F8A7818D2E8DD007C82D5 /* ShareViewController.m in Sources */,
 				0BF097FD18D19F660077132E /* main.m in Sources */,
 			);
@@ -640,6 +654,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DotaShow/DotaShow-Prefix.pch";
 				INFOPLIST_FILE = "DotaShow/DotaShow-Info.plist";
@@ -654,6 +672,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DotaShow/DotaShow-Prefix.pch";
 				INFOPLIST_FILE = "DotaShow/DotaShow-Info.plist";

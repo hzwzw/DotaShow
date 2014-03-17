@@ -13,7 +13,7 @@
 #import <FRDLivelyButton.h>
 
 #import "ShareViewController.h"
-
+#import "ShowGirlViewController.h"
 @interface ViewController ()<RNFrostedSidebarDelegate>
 
 @property (strong, nonatomic) RNFrostedSidebar *callout;
@@ -83,6 +83,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 //    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
 //    [cell startCanvasAnimation];
+    if (indexPath.row ==0) {
+        ShowGirlViewController *show = [[ShowGirlViewController alloc]init];
+        [self.navigationController pushViewController:show animated:YES];
+        return;
+    }
     
     if (indexPath.row == 1) {
         ShareViewController *share = [[ShareViewController alloc]init];
