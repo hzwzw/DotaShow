@@ -94,6 +94,11 @@
         [self.navigationController pushViewController:share animated:YES];
         return;
     }
+    if (indexPath.row == 2) {
+        ShareViewController *share = [[ShareViewController alloc]init];
+        [self presentViewController:share animated:YES completion:nil];
+        return;
+    }
     ViewController *subView = [[ViewController alloc]init];
     [self.navigationController pushViewController:subView animated:YES];
 }

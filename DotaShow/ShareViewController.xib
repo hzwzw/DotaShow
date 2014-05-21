@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareViewController">
@@ -13,12 +15,16 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="1">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVF-4d-Fdl">
-                    <rect key="frame" x="20" y="74" width="30" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVF-4d-Fdl">
+                    <rect key="frame" x="20" y="121" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="6bP-AU-E1R"/>
+                        <constraint firstAttribute="height" constant="30" id="bEi-tZ-9Df"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="Button" image="addthis500.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,9 +33,13 @@
                         <action selector="socialButtonPressed:" destination="-1" eventType="touchUpInside" id="lOb-R5-fO1"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERq-92-qGU">
-                    <rect key="frame" x="145" y="261" width="30" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERq-92-qGU">
+                    <rect key="frame" x="145" y="165" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="WFs-YH-30H"/>
+                        <constraint firstAttribute="width" constant="30" id="zTc-5m-7GD"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="Button" image="addthis500.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -38,9 +48,13 @@
                         <action selector="buttonPressed:" destination="-1" eventType="touchUpInside" id="Fah-Kp-L04"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWz-Ah-Bmg">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWz-Ah-Bmg">
                     <rect key="frame" x="270" y="74" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="g2P-FP-tHb"/>
+                        <constraint firstAttribute="height" constant="30" id="vni-Ag-YFw"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="Button" image="addthis500.png">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -49,11 +63,47 @@
                         <action selector="hmButton:" destination="-1" eventType="touchUpInside" id="F2P-FW-vG6"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gR8-UU-e8n" userLabel="YellowView">
+                    <rect key="frame" x="0.0" y="380" width="320" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="ciY-qf-hn7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cns-E3-mKx" userLabel="BlackView">
+                    <rect key="frame" x="145" y="225" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="Oj1-m4-xVK"/>
+                        <constraint firstAttribute="height" constant="30" id="grq-7D-WnG"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UVF-4d-Fdl" firstAttribute="top" secondItem="iWz-Ah-Bmg" secondAttribute="top" constant="47" id="182-c5-e5H"/>
+                <constraint firstItem="gR8-UU-e8n" firstAttribute="top" secondItem="1" secondAttribute="centerY" constant="140" id="8kB-Dd-6Hd"/>
+                <constraint firstAttribute="trailing" secondItem="iWz-Ah-Bmg" secondAttribute="trailing" constant="20" symbolic="YES" id="98k-BG-w67"/>
+                <constraint firstAttribute="bottom" secondItem="gR8-UU-e8n" secondAttribute="bottom" id="9xc-VT-pXG"/>
+                <constraint firstAttribute="centerX" secondItem="ERq-92-qGU" secondAttribute="centerX" id="BFW-jI-Nwc"/>
+                <constraint firstItem="gR8-UU-e8n" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="DTL-Fj-RU0"/>
+                <constraint firstItem="UVF-4d-Fdl" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="GVT-cz-Xqo"/>
+                <constraint firstItem="iWz-Ah-Bmg" firstAttribute="leading" secondItem="UVF-4d-Fdl" secondAttribute="trailing" constant="220" id="Kap-c0-Xc7"/>
+                <constraint firstAttribute="centerY" secondItem="ERq-92-qGU" secondAttribute="centerY" constant="60" id="NYj-wY-YN0"/>
+                <constraint firstAttribute="trailing" secondItem="gR8-UU-e8n" secondAttribute="trailing" id="Ok8-NM-rHs"/>
+                <constraint firstAttribute="centerY" secondItem="Cns-E3-mKx" secondAttribute="centerY" id="W2u-vJ-52C"/>
+                <constraint firstItem="UVF-4d-Fdl" firstAttribute="top" secondItem="iWz-Ah-Bmg" secondAttribute="bottom" constant="17" id="bMW-pM-TfI"/>
+                <constraint firstItem="iWz-Ah-Bmg" firstAttribute="width" secondItem="UVF-4d-Fdl" secondAttribute="height" multiplier="1:1" id="cWb-CP-1RT"/>
+                <constraint firstAttribute="centerX" secondItem="Cns-E3-mKx" secondAttribute="centerX" id="fj8-yl-PSQ"/>
+                <constraint firstItem="iWz-Ah-Bmg" firstAttribute="height" secondItem="UVF-4d-Fdl" secondAttribute="height" id="jGz-gf-Yex"/>
+                <constraint firstAttribute="top" secondItem="UVF-4d-Fdl" secondAttribute="top" constant="-121" id="qhr-Q7-qrK"/>
+                <constraint firstItem="UVF-4d-Fdl" firstAttribute="width" secondItem="iWz-Ah-Bmg" secondAttribute="width" id="xm4-JV-tQe"/>
+            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
     <resources>

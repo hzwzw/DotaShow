@@ -9,6 +9,7 @@
 #import "ShowGirlViewController.h"
 #import <RNGridMenu.h>
 #import <iCarousel.h>
+#import <SIAlertView.h>
 
 @interface ShowGirlViewController ()
 
@@ -46,8 +47,45 @@
 //    RNGridMenuItem *item2 = [[RNGridMenuItem alloc]initWithImage:[UIImage imageNamed:@"1.jpg"] title:@"lotsss"];
 //    RNGridMenu *av = [[RNGridMenu alloc]initWithItems:[NSArray arrayWithObjects:item1,item2,nil]];
 //    [av showInViewController:self center:self.view.center];
+    [self showAlert];
 }
 
+- (void)showAlert
+{
+    SIAlertView *alertView = [[SIAlertView alloc] initWithTitle:@"SIAlertView" andMessage:@"Sumi Interactive"];
+    [alertView addButtonWithTitle:@"Button1"
+                             type:SIAlertViewButtonTypeDefault
+                          handler:^(SIAlertView *alert) {
+                              NSLog(@"Button1 Clicked");
+                          }];
+    [alertView addButtonWithTitle:@"Button2"
+                             type:SIAlertViewButtonTypeDestructive
+                          handler:^(SIAlertView *alert) {
+                              NSLog(@"Button2 Clicked");
+                          }];
+    [alertView addButtonWithTitle:@"Button3"
+                             type:SIAlertViewButtonTypeCancel
+                          handler:^(SIAlertView *alert) {
+                              NSLog(@"Button3 Clicked");
+                          }];
+    
+    alertView.willShowHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, willShowHandler", alertView);
+    };
+    alertView.didShowHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, didShowHandler", alertView);
+    };
+    alertView.willDismissHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, willDismissHandler", alertView);
+    };
+    alertView.didDismissHandler = ^(SIAlertView *alertView) {
+        NSLog(@"%@, didDismissHandler", alertView);
+    };
+    
+    alertView.transitionStyle = SIAlertViewTransitionStyleBounce;
+    
+    [alertView show];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
